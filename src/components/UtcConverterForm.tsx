@@ -17,7 +17,7 @@ export interface IUtConverterTime {
 
 const schema = yup.object().shape({
 	time:yup.string().required(),
-	timezone:yup.number().integer().negative().required(),
+	timezone:yup.number().required().integer().negative(),
 })
 
 const UtcConverterForm: FC<IUtConverterFormProps> = ({handleTimeTransformed}:IUtConverterFormProps) => {
@@ -56,7 +56,7 @@ const UtcConverterForm: FC<IUtConverterFormProps> = ({handleTimeTransformed}:IUt
 					<label className="py-4 block text-sm text-white">Timezone</label>
 					<input type="text" className="w-full mb-3 py-1 px-4 block box-border rounded-sm text-sm text-gray-200" {...register('timezone')}/>
 					{errors.timezone?.message &&  <span className="text-pinkLight">{errors.timezone.message}</span>}
-					<input type="submit" className="bg-pink my-9 text-white uppercase p-3 block w-full cursor-pointer hover:bg-pinkLight" />
+					<input type="submit" value="Transform" className="bg-pink my-9 text-white uppercase p-3 block w-full cursor-pointer hover:bg-pinkLight" />
 				</form>
 		);
 }
