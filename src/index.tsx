@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TransformTime from './components/TransformTime';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="w-full flex justify-center ">
+        <TransformTime/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
