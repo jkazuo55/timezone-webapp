@@ -32,7 +32,7 @@ You will need to display the returned time (response.time) in your form.
 
 Result
 
-/resultado.gif
+<a href="https://raw.githubusercontent.com/jkazuo55/timezone-webapp/main/resultado.gif"><img src="https://raw.githubusercontent.com/jkazuo55/timezone-webapp/main/resultado.gif" title="Result" /></a>
 
 # Getting Started with Create React App
 
