@@ -30,6 +30,10 @@ The service will return the time converted to UTC format in json format with the
 
 You will need to display the returned time (response.time) in your form.
 
+Result
+
+https://github.com/jkazuo55/timezone-webapp/blob/main/resultado.gif
+
 # Getting Started with Create React App
 
 This project was bootstrapped with React and Typescript [Create React App](https://github.com/facebook/create-react-app).
